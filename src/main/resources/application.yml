@@ -13,7 +13,7 @@ management:
 
 ---
 spring:
-  profiles: default
+  config.activate.on-profile: default
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -23,7 +23,7 @@ spring:
 
 ---
 spring:
-  profiles: local-postgres
+  config.activate.on-profile: local-postgres
   datasource:
     url: jdbc:postgresql://localhost:5432/library
     driverClassName: org.postgresql.Driver
@@ -33,7 +33,7 @@ spring:
 
 ---
 spring:
-  profiles: prod
+  config.activate.on-profile: prod
   datasource:
     url: jdbc:postgresql://${POSTGRES_SERVER}:5432/${POSTGRES_DB}
     driverClassName: org.postgresql.Driver
