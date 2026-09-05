@@ -6,7 +6,7 @@
 This is a small application that provides basic REST endpoints for managing library (add new book, reserve, borrow it, etc.). 
 
 The technology behind it: 
-* Java 11
+* Java 17
 * Postgres
 * Spring Boot 
 
